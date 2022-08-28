@@ -5,6 +5,14 @@ const dialNode = document.getElementById("dial")
 const warningNode = document.getElementById("warning-output")
 const warningContainerNode = document.getElementById("warning-output-container")
 
+navigator.mediaDevices.getUserMedia({ audio: true })
+      .then(function(stream) {
+        console.log('You let me use your mic!')
+      })
+      .catch(function(err) {
+        console.log('No mic for you!')
+      });
+
 const renderDial = (canvasNode, min, max, value) => {
 
     const ctx = canvasNode.getContext("2d")
