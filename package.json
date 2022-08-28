@@ -1,0 +1,28 @@
+{
+  "name": "ignition-hackathon",
+  "version": "1.0.0",
+  "description": "An app to detect dangerous audio levels",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack --mode development",
+    "start": "npm run build && python3 -m http.server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jam-Cai/Ignition-Hackathon.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Jam-Cai/Ignition-Hackathon/issues"
+  },
+  "homepage": "https://github.com/Jam-Cai/Ignition-Hackathon#readme",
+  "dependencies": {
+    "decibel-meter": "^2.0.0",
+    "webpack": "^5.74.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.10.0"
+  }
+}
